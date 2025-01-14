@@ -123,3 +123,287 @@ Traceback (most recent call last):
   File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/utils/common.py", line 31, in read_yaml
     raise ValueError("yaml file is empty")
 ValueError: yaml file is empty
+[2025-01-14 06:32:26,925: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-14 06:32:26,925: INFO: common: yaml file: /Users/suyash/Desktop/projects/text-summarizer/config/config.yaml loaded successfully]
+[2025-01-14 06:32:26,926: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-14 06:32:26,926: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/utils/common.py", line 29, in read_yaml
+    return ConfigBox(content)
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/box/box.py", line 259, in __init__
+    raise BoxValueError("First argument must be mapping or iterable")
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/suyash/Desktop/projects/text-summarizer/main.py", line 9, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/pipeline/stage_1_data_ingestion.py", line 11, in initiate_data_ingestion
+    config=ConfigurationManager()
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/config/configuration.py", line 11, in __init__
+    self.paramss=read_yaml(params_filepath)
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/ensure/main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/utils/common.py", line 31, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2025-01-14 06:35:53,495: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-14 06:35:53,495: INFO: common: YAML file: /Users/suyash/Desktop/projects/text-summarizer/config/config.yaml loaded successfully.]
+[2025-01-14 06:35:53,496: ERROR: common: Unexpected error occurred: YAML file is empty]
+[2025-01-14 06:35:53,496: ERROR: main: YAML file is empty]
+Traceback (most recent call last):
+  File "/Users/suyash/Desktop/projects/text-summarizer/main.py", line 9, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/pipeline/stage_1_data_ingestion.py", line 11, in initiate_data_ingestion
+    config=ConfigurationManager()
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/config/configuration.py", line 11, in __init__
+    self.paramss=read_yaml(params_filepath)
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/ensure/main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/utils/common.py", line 49, in read_yaml
+    raise e
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/utils/common.py", line 31, in read_yaml
+    raise ValueError("YAML file is empty")
+ValueError: YAML file is empty
+[2025-01-14 06:36:36,426: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-14 06:36:36,426: ERROR: common: Unexpected error occurred: [Errno 21] Is a directory: '/Users/suyash/Desktop/projects/text-summarizer/config']
+[2025-01-14 06:36:36,426: ERROR: main: [Errno 21] Is a directory: '/Users/suyash/Desktop/projects/text-summarizer/config']
+Traceback (most recent call last):
+  File "/Users/suyash/Desktop/projects/text-summarizer/main.py", line 9, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/pipeline/stage_1_data_ingestion.py", line 11, in initiate_data_ingestion
+    config=ConfigurationManager()
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/config/configuration.py", line 10, in __init__
+    self.config=read_yaml(config_path)
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/ensure/main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/utils/common.py", line 49, in read_yaml
+    raise e
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/utils/common.py", line 28, in read_yaml
+    with open(path_to_yaml) as yaml_file:
+IsADirectoryError: [Errno 21] Is a directory: '/Users/suyash/Desktop/projects/text-summarizer/config'
+[2025-01-14 06:36:46,114: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-14 06:36:46,115: INFO: common: YAML file: /Users/suyash/Desktop/projects/text-summarizer/config/config.yaml loaded successfully.]
+[2025-01-14 06:36:46,115: ERROR: common: Unexpected error occurred: YAML file is empty]
+[2025-01-14 06:36:46,115: ERROR: main: YAML file is empty]
+Traceback (most recent call last):
+  File "/Users/suyash/Desktop/projects/text-summarizer/main.py", line 9, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/pipeline/stage_1_data_ingestion.py", line 11, in initiate_data_ingestion
+    config=ConfigurationManager()
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/config/configuration.py", line 11, in __init__
+    self.paramss=read_yaml(params_filepath)
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/ensure/main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/utils/common.py", line 49, in read_yaml
+    raise e
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/utils/common.py", line 31, in read_yaml
+    raise ValueError("YAML file is empty")
+ValueError: YAML file is empty
+[2025-01-14 06:38:35,957: INFO: common: YAML file: /Users/suyash/Desktop/projects/text-summarizer/config/config.yaml loaded successfully.]
+[2025-01-14 06:38:35,958: ERROR: common: Unexpected error occurred: YAML file is empty]
+[2025-01-14 06:39:35,033: INFO: common: YAML file: /Users/suyash/Desktop/projects/text-summarizer/config/config.yaml loaded successfully.]
+[2025-01-14 06:39:35,035: ERROR: common: Unexpected error occurred: YAML file is empty]
+[2025-01-14 06:39:38,401: INFO: common: YAML file: /Users/suyash/Desktop/projects/text-summarizer/config/config.yaml loaded successfully.]
+[2025-01-14 06:39:38,402: ERROR: common: Unexpected error occurred: YAML file is empty]
+[2025-01-14 06:43:14,281: INFO: common: YAML file: /Users/suyash/Desktop/projects/text-summarizer/config/config.yaml loaded successfully.]
+[2025-01-14 06:43:14,283: ERROR: common: Unexpected error occurred: YAML file is empty]
+[2025-01-14 06:43:18,128: INFO: common: YAML file: /Users/suyash/Desktop/projects/text-summarizer/config/config.yaml loaded successfully.]
+[2025-01-14 06:43:18,129: ERROR: common: Unexpected error occurred: YAML file is empty]
+[2025-01-14 06:45:12,363: INFO: common: YAML file: /Users/suyash/Desktop/projects/text-summarizer/config/config.yaml loaded successfully.]
+[2025-01-14 06:45:12,364: ERROR: common: Unexpected error occurred: YAML file is empty]
+[2025-01-14 18:34:04,860: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-14 18:34:04,861: ERROR: main: while scanning a simple key
+  in "config/config.yaml", line 8, column 1
+could not find expected ':'
+  in "config/config.yaml", line 8, column 2]
+Traceback (most recent call last):
+  File "/Users/suyash/Desktop/projects/text-summarizer/main.py", line 9, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/pipeline/stage_1_data_ingestion.py", line 11, in initiate_data_ingestion
+    config=ConfigurationManager()
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/config/configuration.py", line 10, in __init__
+    self.config=read_yaml(config_path)
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/ensure/main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/utils/common.py", line 33, in read_yaml
+    raise e
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/utils/common.py", line 27, in read_yaml
+    content = yaml.safe_load(yaml_file)
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/yaml/parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/yaml/scanner.py", line 116, in check_token
+    self.fetch_more_tokens()
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/yaml/scanner.py", line 173, in fetch_more_tokens
+    return self.fetch_stream_end()
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/yaml/scanner.py", line 377, in fetch_stream_end
+    self.remove_possible_simple_key()
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/yaml/scanner.py", line 318, in remove_possible_simple_key
+    raise ScannerError("while scanning a simple key", key.mark,
+yaml.scanner.ScannerError: while scanning a simple key
+  in "config/config.yaml", line 8, column 1
+could not find expected ':'
+  in "config/config.yaml", line 8, column 2
+[2025-01-14 18:34:25,147: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-14 18:34:25,148: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-14 18:34:25,148: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-14 18:34:25,148: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/utils/common.py", line 29, in read_yaml
+    return ConfigBox(content)
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/box/box.py", line 259, in __init__
+    raise BoxValueError("First argument must be mapping or iterable")
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/suyash/Desktop/projects/text-summarizer/main.py", line 9, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/pipeline/stage_1_data_ingestion.py", line 11, in initiate_data_ingestion
+    config=ConfigurationManager()
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/config/configuration.py", line 11, in __init__
+    self.paramss=read_yaml(params_filepath)
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/ensure/main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/utils/common.py", line 31, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2025-01-14 18:36:36,005: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-14 18:36:36,005: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-14 18:36:36,006: ERROR: main: "'ConfigBox' object has no attribute 'artifacts_root'"]
+Traceback (most recent call last):
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/box/box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+KeyError: 'artifacts_root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/box/box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/box/box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'artifacts_root'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/box/box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+AttributeError: 'ConfigBox' object has no attribute 'artifacts_root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/box/config_box.py", line 28, in __getattr__
+    return super().__getattr__(item)
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/box/box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'artifacts_root'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/box/box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+KeyError: 'artifacts_root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/box/box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/box/box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'artifacts_root'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/box/box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+AttributeError: 'ConfigBox' object has no attribute 'artifacts_root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/suyash/Desktop/projects/text-summarizer/main.py", line 9, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/pipeline/stage_1_data_ingestion.py", line 11, in initiate_data_ingestion
+    config=ConfigurationManager()
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/config/configuration.py", line 13, in __init__
+    create_directories([self.config.artifacts_root])
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/box/config_box.py", line 30, in __getattr__
+    return super().__getattr__(item.lower())
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/box/box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'artifacts_root'"
+[2025-01-14 18:38:03,115: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-14 18:38:03,117: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-14 19:11:03,117: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-14 19:11:03,121: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-14 19:11:43,539: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-14 19:11:43,540: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-14 19:19:30,086: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-14 19:19:30,088: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-14 19:22:48,501: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-14 19:22:48,502: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-14 19:23:35,939: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-14 19:23:35,941: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-14 19:23:35,942: INFO: common: created directory at: artifacts]
+[2025-01-14 19:23:35,943: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-14 19:28:22,641: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-14 19:28:22,643: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-14 19:28:22,643: INFO: common: created directory at: artifacts]
+[2025-01-14 19:28:22,644: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-14 19:28:58,800: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-14 19:28:58,801: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-14 19:28:58,802: INFO: common: created directory at: artifacts]
+[2025-01-14 19:28:58,803: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-14 19:28:58,804: ERROR: 3708879471: Error downloading file: expected string or bytes-like object]
+[2025-01-14 19:28:58,805: ERROR: 3708879471: The file artifacts/data_ingestion/data.zip does not exist.]
+[2025-01-14 19:30:21,132: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-14 19:30:21,133: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-14 19:30:21,133: INFO: common: created directory at: artifacts]
+[2025-01-14 19:31:24,531: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-14 19:31:24,533: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-14 19:31:24,533: INFO: common: created directory at: artifacts]
+[2025-01-14 19:31:24,534: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-14 19:32:15,660: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-14 19:32:15,661: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-14 19:32:15,661: INFO: common: created directory at: artifacts]
+[2025-01-14 19:32:15,662: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-14 19:35:21,896: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-14 19:35:21,897: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-14 19:35:21,897: INFO: common: created directory at: artifacts]
+[2025-01-14 19:35:21,898: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-14 22:08:59,407: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-14 22:08:59,407: ERROR: main: Argument path_to_yaml of type <class 'str'> to <function read_yaml at 0x10038cdc0> does not match annotation type <class 'pathlib.Path'>]
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "/Users/suyash/Desktop/text-summarizer/src/textSummarizer/pipeline/stage_1_data_ingestion_pipeline.py", line 11, in initiate_data_ingestion
+    config=ConfigurationManager()
+  File "/Users/suyash/Desktop/text-summarizer/src/textSummarizer/config/configuration.py", line 10, in __init__
+    self.config=read_yaml(config_path)
+  File "/Users/suyash/.pyenv/versions/3.8.10/lib/python3.8/site-packages/ensure/main.py", line 845, in __call__
+    raise EnsureError(msg.format(
+ensure.main.EnsureError: Argument path_to_yaml of type <class 'str'> to <function read_yaml at 0x10038cdc0> does not match annotation type <class 'pathlib.Path'>

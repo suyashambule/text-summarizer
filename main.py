@@ -1,5 +1,5 @@
 from src.textSummarizer.logging import logger
-from src.textSummarizer.pipeline.stage_1_data_ingestion import DataIngestionTrainingPipeline
+from src.textSummarizer.pipeline.stage_1_data_ingestion_pipeline import DataIngestionTrainingPipeline
 
 
 STAGE_NAME="Data Ingestion stage"
@@ -10,4 +10,4 @@ try:
     logger.info(f"Stage {STAGE_NAME} Completed")
 except Exception as e:
     logger.exception(e)
-    raise e
+    raise ValueError(e)
