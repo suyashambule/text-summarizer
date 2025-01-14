@@ -1,0 +1,125 @@
+[2025-01-14 06:27:59,830: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-14 06:27:59,831: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-14 06:27:59,831: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-14 06:27:59,831: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/utils/common.py", line 17, in read_yaml
+    return ConfigBox(content)
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/box/box.py", line 259, in __init__
+    raise BoxValueError("First argument must be mapping or iterable")
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/suyash/Desktop/projects/text-summarizer/main.py", line 9, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/pipeline/stage_1_data_ingestion.py", line 11, in initiate_data_ingestion
+    config=ConfigurationManager()
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/config/configuration.py", line 11, in __init__
+    self.paramss=read_yaml(params_filepath)
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/ensure/main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/utils/common.py", line 19, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2025-01-14 06:28:45,506: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-14 06:28:45,507: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-14 06:28:45,507: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-14 06:28:45,507: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/utils/common.py", line 17, in read_yaml
+    return ConfigBox(content)
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/box/box.py", line 259, in __init__
+    raise BoxValueError("First argument must be mapping or iterable")
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/suyash/Desktop/projects/text-summarizer/main.py", line 9, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/pipeline/stage_1_data_ingestion.py", line 11, in initiate_data_ingestion
+    config=ConfigurationManager()
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/config/configuration.py", line 11, in __init__
+    self.paramss=read_yaml(params_filepath)
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/ensure/main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/utils/common.py", line 19, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2025-01-14 06:29:24,391: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-14 06:29:24,391: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-14 06:29:24,391: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-14 06:29:24,392: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/utils/common.py", line 29, in read_yaml
+    return ConfigBox(content)
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/box/box.py", line 259, in __init__
+    raise BoxValueError("First argument must be mapping or iterable")
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/suyash/Desktop/projects/text-summarizer/main.py", line 9, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/pipeline/stage_1_data_ingestion.py", line 11, in initiate_data_ingestion
+    config=ConfigurationManager()
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/config/configuration.py", line 11, in __init__
+    self.paramss=read_yaml(params_filepath)
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/ensure/main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/utils/common.py", line 31, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2025-01-14 06:30:18,782: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-14 06:30:18,783: INFO: common: yaml file: /Users/suyash/Desktop/projects/text-summarizer/config/config.yaml loaded successfully]
+[2025-01-14 06:30:18,783: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-14 06:30:18,783: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/utils/common.py", line 29, in read_yaml
+    return ConfigBox(content)
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/box/box.py", line 259, in __init__
+    raise BoxValueError("First argument must be mapping or iterable")
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/suyash/Desktop/projects/text-summarizer/main.py", line 9, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/pipeline/stage_1_data_ingestion.py", line 11, in initiate_data_ingestion
+    config=ConfigurationManager()
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/config/configuration.py", line 11, in __init__
+    self.paramss=read_yaml(params_filepath)
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/ensure/main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/utils/common.py", line 31, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2025-01-14 06:30:21,070: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-14 06:30:21,071: INFO: common: yaml file: /Users/suyash/Desktop/projects/text-summarizer/config/config.yaml loaded successfully]
+[2025-01-14 06:30:21,071: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-14 06:30:21,071: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/utils/common.py", line 29, in read_yaml
+    return ConfigBox(content)
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/box/box.py", line 259, in __init__
+    raise BoxValueError("First argument must be mapping or iterable")
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/suyash/Desktop/projects/text-summarizer/main.py", line 9, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/pipeline/stage_1_data_ingestion.py", line 11, in initiate_data_ingestion
+    config=ConfigurationManager()
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/config/configuration.py", line 11, in __init__
+    self.paramss=read_yaml(params_filepath)
+  File "/Users/suyash/Desktop/projects/text-summarizer/venv/lib/python3.10/site-packages/ensure/main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "/Users/suyash/Desktop/projects/text-summarizer/src/textSummarizer/utils/common.py", line 31, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty

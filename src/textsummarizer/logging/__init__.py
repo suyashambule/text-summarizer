@@ -2,21 +2,22 @@ import os
 import sys
 import logging
 
-log_dirs = "logs"
+log_dir="logs"
+logging_str = "[%(asctime)s: %(levelname)s: %(module)s: %(message)s]"
 
-os.makedirs(log_dirs, exist_ok=True)
+log_filepath = os.path.join(log_dir,"continuos_logs.log")
 
-logging_str = '[%(asctime)s: %(levelname)s: %(module)s: %(message)s]'
+os.makedirs(log_dir,exist_ok=True)
+
 
 logging.basicConfig(
-    level=logging.INFO,
-    format=logging_str,
+    level= logging.INFO,
+    format= logging_str,
+
     handlers=[
-        logging.FileHandler(os.path.join(log_dirs, "app.log")), 
-        logging.StreamHandler(sys.stdout)  
+        logging.FileHandler(log_filepath),
+        logging.StreamHandler(sys.stdout)
     ]
 )
 
-
-logging.info("Logging system initialized successfully.")
-
+logger=logging.getLogger("summarizerlogger")
