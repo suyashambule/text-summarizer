@@ -407,3 +407,20 @@ Traceback (most recent call last):
   File "/Users/suyash/.pyenv/versions/3.8.10/lib/python3.8/site-packages/ensure/main.py", line 845, in __call__
     raise EnsureError(msg.format(
 ensure.main.EnsureError: Argument path_to_yaml of type <class 'str'> to <function read_yaml at 0x10038cdc0> does not match annotation type <class 'pathlib.Path'>
+[2025-01-15 01:08:52,068: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-15 01:08:52,068: ERROR: main: Argument path_to_yaml of type <class 'str'> to <function read_yaml at 0x1052197e0> does not match annotation type <class 'pathlib.Path'>]
+Traceback (most recent call last):
+  File "/Users/suyash/Desktop/text-summarizer/main.py", line 9, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "/Users/suyash/Desktop/text-summarizer/src/textSummarizer/pipeline/stage_1_data_ingestion_pipeline.py", line 11, in initiate_data_ingestion
+    config=ConfigurationManager()
+  File "/Users/suyash/Desktop/text-summarizer/src/textSummarizer/config/configuration.py", line 10, in __init__
+    self.config=read_yaml(config_path)
+  File "/Users/suyash/Desktop/text-summarizer/venv/lib/python3.10/site-packages/ensure/main.py", line 845, in __call__
+    raise EnsureError(msg.format(
+ensure.main.EnsureError: Argument path_to_yaml of type <class 'str'> to <function read_yaml at 0x1052197e0> does not match annotation type <class 'pathlib.Path'>
+[2025-01-15 17:39:29,126: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-01-15 17:39:29,128: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-15 17:39:29,129: INFO: common: created directory at: artifacts]
+[2025-01-15 17:39:29,129: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-15 17:39:33,222: INFO: 227420655: File is downloaded]
