@@ -435,3 +435,4 @@ ensure.main.EnsureError: Argument path_to_yaml of type <class 'str'> to <functio
 [2025-01-18 04:09:03,163: INFO: common: yaml file: params.yaml loaded successfully]
 [2025-01-18 04:09:03,164: INFO: common: created directory at: artifacts]
 [2025-01-18 04:09:03,164: INFO: common: created directory at: artifacts/data_transformation]
+[2025-01-18 04:12:19,180: INFO: config: PyTorch version 2.5.1 available.]
